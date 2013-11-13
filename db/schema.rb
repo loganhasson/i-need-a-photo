@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131113005605) do
+ActiveRecord::Schema.define(version: 20131113012042) do
 
   create_table "photos", force: true do |t|
     t.integer  "user_id"
@@ -30,6 +30,10 @@ ActiveRecord::Schema.define(version: 20131113005605) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "instagram_key"
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "info"
+    t.string   "remember_token"
   end
 
 end
