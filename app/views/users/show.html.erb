@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>Facebook key:</strong>
+  <%= @user.facebook_key %>
+</p>
+
+<p>
+  <strong>Twitter key:</strong>
+  <%= @user.twitter_key %>
+</p>
+
+<p>
+  <strong>Google key:</strong>
+  <%= @user.google_key %>
+</p>
+
+<p>
+  <strong>Flickr key:</strong>
+  <%= @user.flickr_key %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
